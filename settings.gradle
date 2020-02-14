@@ -1,0 +1,5 @@
+rootProject.name = 'autowired-vs-serviceloader'
+
+include 'autowired'
+include 'serviceloader'
+

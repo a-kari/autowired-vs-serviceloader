@@ -1,0 +1,25 @@
+allprojects {
+    group 'jp.neechan'
+    version '1.0-SNAPSHOT'
+}
+
+subprojects {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+
+    apply plugin: 'java'
+    apply plugin: 'idea'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    ext {
+        junit_version = '4.13'
+    }
+
+    dependencies {
+        testImplementation "junit:junit:$junit_version"
+    }
+}
